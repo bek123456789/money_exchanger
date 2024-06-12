@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="currency">
+            <input type="number" id="amount-one" value="1" placeholder="0">
+            <select id="currency-one">
+                <option value="AED" label="United Arab Emirates dirham">AED</option>
+                <option value="AFN" label="Afghan afghani">AFN</option>
+                <option value="ALL" label="Albanian lek">ALL</option>
+                <option value="AMD" label="Armenian dram">AMD</option>
+                <option value="ANG" label="Netherlands Antillean guilder">ANG</option>
+                <option value="AOA" label="Angolan kwanza">AOA</option>
+                <option value="ARS" label="Argentine peso">ARS</option>
+                <option value="AUD" label="Australian dollar">AUD</option>
+                <option value="AWG" label="Aruban florin">AWG</option>
+                <option value="AZN" label="Azerbaijani manat">AZN</option>
+                <option value="BAM" label="Bosnia and Herzegovina convertible mark">BAM</option>
+                <option value="BBD" label="Barbadian dollar">BBD</option>
+                <option value="BDT" label="Bangladeshi taka">BDT</option>
+                <option value="BGN" label="Bulgarian lev">BGN</option>
+                <option value="BHD" label="Bahraini dinar">BHD</option>
+                <option value="BIF" label="Burundian franc">BIF</option>
+                <option value="BMD" label="Bermudian dollar">BMD</option>
+                <option value="BND" label="Brunei dollar">BND</option>
+                <option value="BOB" label="Bolivian boliviano">BOB</option>
+                <option value="BRL" label="Brazilian real">BRL</option>
+                <option value="BSD" label="Bahamian dollar">BSD</option>
+                <option value="BTN" label="Bhutanese ngultrum">BTN</option>
+                <option value="BWP" label="Botswana pula">BWP</option>
+                <option value="BYN" label="Belarusian ruble">BYN</option>
+                <option value="BZD" label="Belize dollar">BZD</option>
+                <option value="CAD" label="Canadian dollar">CAD</option>
+                <option value="CDF" label="Congolese franc">CDF</option>
+                <option value="CHF" label="Swiss franc">CHF</option>
+                <option value="CLP" label="Chilean peso">CLP</option>
+                <option value="CNY" label="Chinese yuan">CNY</option>
+                <option value="COP" label="Colombian peso">COP</option>
+                <option value="CRC" label="Costa Rican colón">CRC</option>
+                <option value="CUC" label="Cuban convertible peso">CUC</option>
+                <option value="CUP" label="Cuban peso">CUP</option>
+                <option value="CVE" label="Cape Verdean escudo">CVE</option>
+                <option value="CZK" label="Czech koruna">CZK</option>
+                <option value="DJF" label="Djiboutian franc">DJF</option>
+                <option value="DKK" label="Danish krone">DKK</option>
+                <option value="DOP" label="Dominican peso">DOP</option>
+                <option value="DZD" label="Algerian dinar">DZD</option>
+                <option value="EGP" label="Egyptian pound">EGP</option>
+                <option value="ERN" label="Eritrean nakfa">ERN</option>
+                <option value="ETB" label="Ethiopian birr">ETB</option>
+                <option value="EUR" label="EURO">EUR</option>
+                <option value="FJD" label="Fijian dollar">FJD</option>
+                <option value="FKP" label="Falkland Islands pound">FKP</option>
+                <option value="GBP" label="British pound">GBP</option>
+                <option value="GEL" label="Georgian lari">GEL</option>
+                <option value="GGP" label="Guernsey pound">GGP</option>
+                <option value="GHS" label="Ghanaian cedi">GHS</option>
+                <option value="GIP" label="Gibraltar pound">GIP</option>
+                <option value="GMD" label="Gambian dalasi">GMD</option>
+            </select>
+        </div>
+        <div class="swap-rate-container">
+            <div class="rate" id="rate"></div>
+            <button class="btn" id="swap">Swap</button>
+            <div class="currency">
+                <input type="number" id="amount-two" value="1" placeholder="0">
+                <select id="currency-two">
+                    <option value="AED" label="United Arab Emirates dirham">AED</option>
+                    <option value="AFN" label="Afghan afghani">AFN</option>
+                    <option value="ALL" label="Albanian lek">ALL</option>
+                    <option value="AMD" label="Armenian dram">AMD</option>
+                    <option value="ANG" label="Netherlands Antillean guilder">ANG</option>
+                    <option value="AOA" label="Angolan kwanza">AOA</option>
+                    <option value="ARS" label="Argentine peso">ARS</option>
+                    <option value="AUD" label="Australian dollar">AUD</option>
+                    <option value="AWG" label="Aruban florin">AWG</option>
+                    <option value="AZN" label="Azerbaijani manat">AZN</option>
+                    <option value="BAM" label="Bosnia and Herzegovina convertible mark">BAM</option>
+                    <option value="BBD" label="Barbadian dollar">BBD</option>
+                    <option value="BDT" label="Bangladeshi taka">BDT</option>
+                    <option value="BGN" label="Bulgarian lev">BGN</option>
+                    <option value="BHD" label="Bahraini dinar">BHD</option>
+                    <option value="BIF" label="Burundian franc">BIF</option>
+                    <option value="BMD" label="Bermudian dollar">BMD</option>
+                    <option value="BND" label="Brunei dollar">BND</option>
+                    <option value="BOB" label="Bolivian boliviano">BOB</option>
+                    <option value="BRL" label="Brazilian real">BRL</option>
+                    <option value="BSD" label="Bahamian dollar">BSD</option>
+                    <option value="BTN" label="Bhutanese ngultrum" selected>BTN</option>
+                    <option value="BWP" label="Botswana pula">BWP</option>
+                    <option value="BYN" label="Belarusian ruble">BYN</option>
+                    <option value="BZD" label="Belize dollar">BZD</option>
+                    <option value="CAD" label="Canadian dollar">CAD</option>
+                    <option value="CDF" label="Congolese franc">CDF</option>
+                    <option value="CHF" label="Swiss franc">CHF</option>
+                    <option value="CLP" label="Chilean peso">CLP</option>
+                    <option value="CNY" label="Chinese yuan">CNY</option>
+                    <option value="COP" label="Colombian peso">COP</option>
+                    <option value="CRC" label="Costa Rican colón">CRC</option>
+                    <option value="CUC" label="Cuban convertible peso">CUC</option>
+                    <option value="CUP" label="Cuban peso">CUP</option>
+                    <option value="CVE" label="Cape Verdean escudo">CVE</option>
+                    <option value="CZK" label="Czech koruna">CZK</option>
+                    <option value="DJF" label="Djiboutian franc">DJF</option>
+                    <option value="DKK" label="Danish krone">DKK</option>
+                    <option value="DOP" label="Dominican peso">DOP</option>
+                    <option value="DZD" label="Algerian dinar">DZD</option>
+                    <option value="EGP" label="Egyptian pound">EGP</option>
+                    <option value="ERN" label="Eritrean nakfa">ERN</option>
+                    <option value="ETB" label="Ethiopian birr">ETB</option>
+                    <option value="EUR" label="EURO">EUR</option>
+                    <option value="FJD" label="Fijian dollar">FJD</option>
+                    <option value="FKP" label="Falkland Islands pound">FKP</option>
+                    <option value="GBP" label="British pound">GBP</option>
+                    <option value="GEL" label="Georgian lari">GEL</option>
+                    <option value="GGP" label="Guernsey pound">GGP</option>
+                    <option value="GHS" label="Ghanaian cedi">GHS</option>
+                    <option value="GIP" label="Gibraltar pound">GIP</option>
+                    <option value="GMD" label="Gambian dalasi">GMD</option>
+                </select>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
